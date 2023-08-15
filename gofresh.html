@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <title>GoFresh</title>
+</head>
+<body>
+<header class="p-2 text-bg-dark">
+    <div>
+        <a href="/">
+            <i class="bi bi-cart4" style="font-size: 30px"></i>
+        </a>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="#">Billing</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <form role="search" action="/searchProduct" method="post">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" name="search"/>
+        </form>
+
+        <div>
+            <div class="dropdown">
+                <a href="#">
+                    <img src="" alt="img" width="32" height="32" class="rounded-circle"/>
+                </a>
+                <ul>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><hr/></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <img src="apple.jpg" alt="Apple img loading" style="height: 180px; width: auto; padding-top: 10px; border-radius: 5px;"/>
+            <h1 id="Apple">Apple</h1>
+            <p class="price">Fresh Apple</p>
+            <p class="price" id="120">120</p>
+            <p><button onclick="addToCart('501')">Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="Orange.jpg" alt="Apple img loading" style="height: 180px; width: auto; padding-top: 10px; border-radius: 5px;"/>
+            <h1 id="Apple">Orange</h1>
+            <p class="price">Orange</p>
+            <p class="price" id="130">130</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="Banana.jpg"  alt="Banana img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Banana">Banana</h1>
+            <p class="price">Ripe Yellow Banana</p>
+            <p class="price" id="100">100</p>
+            <p><button onclick="addToCart('503')">Add to Cart</button></p>
+          </div>
+        
+          <div class="card">
+            <img src="./img/Broccoli.jpg"  alt="Broccoli img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Broccoli">Broccoli</h1>
+            <p class="price">Fresh Green Broccoli</p>
+            <p class="price" id="1.99">1.99</p>
+            <p><button onclick="addToCart('504')">Add to Cart</button></p>
+          </div>
+          <div class="card">
+            <img src="./img/Milk.jpg"  alt="Milk img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Milk">Milk</h1>
+            <p class="price">Full Cream Milk    </p>
+            <p class="price" id="2.99">2.99</p>
+            <p><button onclick="addToCart('506')">Add to Cart</button></p>
+          </div>
+        
+          <div class="card">
+            <img src="./img/Bread.jpg"  alt="Bread img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Bread">Bread</h1>
+            <p class="price">Whole Wheat Bread</p>
+            <p class="price" id="50">50</p>
+            <p><button onclick="addToCart('507')">Add to Cart</button></p>
+          </div>
+        
+          <div class="card">
+            <img src="./img/Chicken.jpg"  alt="Chicken img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Chicken">Chicken</h1>
+            <p class="price">Fresh Chicken Breast</p>
+            <p class="price" id="240">240</p>
+            <p><button onclick="addToCart('508')">Add to Cart</button></p>
+          </div>
+        
+          <div class="card">
+            <img src="./img/Soda.jpg"  alt="Soda img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Soda">Soda</h1>
+            <p class="price">Carbonated Soda</p>
+            <p class="price" id="149">149</p>
+            <p><button onclick="addToCart('509')">Add to Cart</button></p>
+          </div>
+        
+          <div class="card">
+            <img src="./img/Chips.jpg"  alt="Chips img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Chips">Chips</h1>
+            <p class="price">Potato Chips</p>
+            <p class="price" id="99">99</p>
+            <p><button onclick="addToCart('510')">Add to Cart</button></p>
+          </div>
+        
+          <div class="card">
+            <img src="./img/Popcorn.jpg"  alt="Popcorn img loading" style=" height: 180px; width: auto; padding-top: 10px; border-radius: 5px;" />
+            <h1 id="Popcorn">Popcorn</h1>
+            <p class="price">Fresh Popcorn</p>
+            <p class="price" id="80">80</p>
+            <p><button onclick="addToCart('511')">Add to Cart</button></p>
+          </div>
+    </div>
+
+</div>
+
+<div>
+    <div class="about-section">
+    </div>
+    <footer>
+        <div>
+            <span>&copy; 2023 Company, Inc</span>
+        </div>
+       
+    </footer>
+</div>
+</body>
+</html>
